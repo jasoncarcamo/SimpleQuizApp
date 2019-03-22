@@ -1,0 +1,286 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: grey;
+    margin: 0;
+}
+
+p{
+    font-size: 1.6em;
+}
+
+.container{
+    background-color: #dfdfde;
+    text-align: center;
+}
+
+.headercontainer{
+    margin: 2.5% auto 0 auto;
+    width: 80%;
+    color: white;
+    border-radius: 1.3em;
+    border: 1px solid black;
+    font-size: 1em;
+    background-color: #77b1ad;
+}
+
+.headh1{
+    margin-top: 30%;
+    color: white;
+    background-color: #77b1ad; 
+}
+
+label:hover{
+    color: black;
+    background: white;
+}
+
+label, input[type='radio']{
+    background-color: #77b1ad;
+    padding-right: 3em;
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 1.3em;
+    font-size: 1.1em;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 2.5% auto;
+    width: 80%;
+    
+    border-radius: 1.3em;
+    
+    
+}
+
+
+#correctfeedback h1{
+    color: #008000;
+}
+
+
+.container {
+    border-radius: 12.5%;
+    border:1px solid #d3cfcf;
+    width: 25em;
+    height: 30em;
+    margin: 25% auto;
+    
+}
+
+#questions{
+    width: 90%;
+    
+}
+
+#questions > .headercontainer{
+    margin: 4.5% 0 0 16%;
+}
+
+.container h3{
+    
+    text-align: center;
+    margin: 10% auto 5% auto;
+    font-size: 1.2em;
+}
+
+#questions h2{ 
+    text-align: center;
+}
+
+fieldset{
+    
+    margin: 0 auto;
+    height: 15em;
+    line-height: 3em;
+    border: none;
+    
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    margin: 0 0 0 15%;
+}
+
+
+
+#start{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+
+#questions{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#startbutton{
+    
+    
+    margin: 45% 40% 0 40%;
+    width:20%;
+    height: 3.3em;
+    
+}
+
+#submitbutton{
+    margin: 10% auto 10% auto;
+    height: 3.3em;
+}
+
+#status-bar{
+    text-align: center;
+    width: 60%;
+    margin: 10% 0 1% 25%;
+    font-size: 1.1em;
+    color: black;
+    
+}
+
+button{
+    background: #f85f68;
+    color: white;
+    border-radius: 1.3em;
+    cursor: pointer;
+    border: 1px solid rgb(109, 109, 109);
+    height: 3.3em;
+    font-weight: 750;
+}
+button:hover{
+    border: 1px solid black;
+    background-color: rgb(190, 3, 3);
+    color: white;
+    cursor: pointer;
+}
+
+/*Wrong template */
+#wrongfeedback{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20% auto 0 5%;
+    text-align: center;
+    width: 90%;
+}
+
+
+#wrongbutton{
+    margin: 25% auto 0 13%;
+    width: 4.5em;
+    height: 3.3em;
+}
+
+.wrong{
+    color: #ff0000;
+}
+
+/*correct template*/
+
+#correctfeedback{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20% auto 0 auto;
+}
+
+.correctanswer{
+    text-align: center;
+}
+.correct{
+    
+}
+
+#nextbutton{
+    margin: 30% auto 0 auto;
+    width: 4.5em;
+    height: 3.3em;
+}
+
+/*result feed*/
+
+#resultfeed > h1{
+    
+}
+
+#resultfeed{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20% auto 0 auto;
+    width: 95%;
+}
+
+.results{
+    text-align: center;
+}
+#restartbutton{
+    margin: 0 auto;
+    width: 5em;
+    height: 3.3em;
+}
+.resultheader{
+    background-color: #77b1ad;
+    border: 1px solid black;
+    border-radius:1em;
+    color: white;
+    width: 50em;
+}
+
+
+
+@media screen and (min-width: 500px){
+    .container{
+        border-radius: 12.5%;
+    border:1px solid #d3cfcf;
+    margin: 10% auto;
+    
+    }
+
+    #wrongbutton{
+        margin: 35% auto;
+        
+    
+    }
+    #nextbutton{
+        margin: 35% auto 0 auto;
+        
+        
+    }
+}
+
+@media screen and (min-width: 800px){
+    .container{
+        border-radius: 12.5%;
+    border:1px solid #d3cfcf;
+    width: 50%;
+    height: 30em;
+    margin: 5% auto;
+    
+    }
+
+    #startbutton{
+        margin: 20% 0 0 40%;
+    }
+
+    
+    #wrongbutton{
+        margin: 25% auto;
+        
+       
+    }
+
+    #nextbutton{
+        margin: 25% auto 0 auto;
+        
+        
+    }
+}
